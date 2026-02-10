@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio - Buscador de Lugares</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Raleway", sans-serif;
+        background-color: #f8fafc;
+        color: #1e293b;
+        min-height: 100vh;
+      }
+
+      .navbar {
+        background-color: #1e40af;
+        padding: 1.25rem 2rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      .navbar h1 {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 3rem 2rem;
+        flex: 1;
+      }
+
+      .hero {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .hero h2 {
+        font-size: 2.5rem;
+        color: #0f172a;
+        margin-bottom: 1rem;
+      }
+
+      .hero p {
+        font-size: 1.125rem;
+        color: #64748b;
+        max-width: 600px;
+        margin: 0 auto 2.5rem;
+      }
+
+      .cta-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background-color: #2563eb;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 40px;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.125rem;
+        transition: all 0.2s;
+        border: none;
+        cursor: pointer;
+      }
+
+      .cta-button:hover {
+        background-color: #1d4ed8;
+        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-content">
+        <i data-lucide="map-pinned" stroke-width="2.5" color="white"></i>
+        <h1>Buscador de Lugares</h1>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="hero">
+        <h2>Bienvenido a Flask</h2>
+        <p>
+          Ejemplo educativo de consumo de una API para búsqueda y visualización
+          de lugares en el mapa
+        </p>
+        <a href="/buscar" class="cta-button">
+          <i data-lucide="search"></i>
+          Buscar un lugar en el mapa
+        </a>
+      </div>
+    </div>
+
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
